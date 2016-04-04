@@ -41,7 +41,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         toolbar.setTitleTextColor(getResources().getColor(android.R.color.white));
         toolbar.setNavigationOnClickListener(this);
         navigationView.inflateHeaderView(R.layout.navigation_head);
-        recyclerView.setLayoutManager(new StaggeredGridLayoutManager(3, 1));
+        recyclerView.setLayoutManager(new StaggeredGridLayoutManager(2, StaggeredGridLayoutManager.VERTICAL));
         recyclerView.setAdapter(new RecyclerImageAdapter());
     }
 

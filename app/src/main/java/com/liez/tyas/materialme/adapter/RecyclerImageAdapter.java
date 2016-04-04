@@ -16,6 +16,12 @@ import com.liez.tyas.materialme.R;
 public class RecyclerImageAdapter extends RecyclerView.Adapter<RecyclerImageAdapter.ImageHolder> {
 
     private Context context;
+    private int[] imageRes;
+
+
+    public RecyclerImageAdapter() {
+        imageRes = new int[]{R.drawable.image_car_1, R.drawable.image_car_2, R.drawable.image_car_3, R.drawable.image_car_4, R.drawable.image_car_5, R.drawable.image_car_6, R.drawable.image_car_7};
+    }
 
     @Override
     public ImageHolder onCreateViewHolder(ViewGroup parent, int viewType) {
@@ -26,13 +32,13 @@ public class RecyclerImageAdapter extends RecyclerView.Adapter<RecyclerImageAdap
     @Override
     public void onBindViewHolder(ImageHolder holder, int position) {
         Glide.with(context)
-                .load(R.drawable.image_mountain)
+                .load(imageRes[position])
                 .into(holder.imageView);
     }
 
     @Override
     public int getItemCount() {
-        return 30;
+        return imageRes.length;
     }
 
     public class ImageHolder extends RecyclerView.ViewHolder {
