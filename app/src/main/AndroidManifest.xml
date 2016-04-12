@@ -20,6 +20,10 @@
         <activity
             android:name=".ListItemActivity"
             android:label="@string/title_activity_list_item"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".SupportDesignActivity"
+            android:label="@string/title_activity_support_design"
             android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 

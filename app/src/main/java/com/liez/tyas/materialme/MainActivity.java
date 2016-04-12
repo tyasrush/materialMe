@@ -1,15 +1,14 @@
 package com.liez.tyas.materialme;
 
+import android.content.Intent;
+import android.os.Bundle;
 import android.support.design.widget.NavigationView;
-import android.support.design.widget.Snackbar;
 import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.AppCompatActivity;
-import android.os.Bundle;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.StaggeredGridLayoutManager;
 import android.support.v7.widget.Toolbar;
-import android.util.Log;
 import android.view.MenuItem;
 import android.view.View;
 
@@ -18,7 +17,7 @@ import com.liez.tyas.materialme.adapter.RecyclerImageAdapter;
 import butterknife.Bind;
 import butterknife.ButterKnife;
 
-public class MainActivity extends AppCompatActivity implements View.OnClickListener {
+public class MainActivity extends AppCompatActivity implements View.OnClickListener, NavigationView.OnNavigationItemSelectedListener {
 
     @Bind(R.id.drawer_layout_main)
     DrawerLayout drawerLayout;
@@ -41,6 +40,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         toolbar.setTitleTextColor(getResources().getColor(android.R.color.white));
         toolbar.setNavigationOnClickListener(this);
         navigationView.inflateHeaderView(R.layout.navigation_head);
+        navigationView.setNavigationItemSelectedListener(this);
         recyclerView.setLayoutManager(new StaggeredGridLayoutManager(2, StaggeredGridLayoutManager.VERTICAL));
         recyclerView.setAdapter(new RecyclerImageAdapter());
     }
@@ -52,5 +52,15 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         } else {
             drawerLayout.openDrawer(GravityCompat.START);
         }
+    }
+
+
+    @Override
+    public boolean onNavigationItemSelected(MenuItem item) {
+        if (item.getItemId() == R.id.menu_item_1) {
+            startActivity(new Intent(this, SupportDesignActivity.class));
+        }
+
+        return false;
     }
 }
