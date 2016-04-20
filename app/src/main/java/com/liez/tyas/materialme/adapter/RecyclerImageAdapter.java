@@ -10,17 +10,18 @@ import android.widget.ImageView;
 import com.bumptech.glide.Glide;
 import com.liez.tyas.materialme.R;
 
+import java.util.List;
+
 /**
  * Created by tyasrus on 23/03/16.
  */
 public class RecyclerImageAdapter extends RecyclerView.Adapter<RecyclerImageAdapter.ImageHolder> {
 
     private Context context;
-    private int[] imageRes;
+    private List<Integer> imageList;
 
-
-    public RecyclerImageAdapter() {
-        imageRes = new int[]{R.drawable.image_car_1, R.drawable.image_car_2, R.drawable.image_car_3, R.drawable.image_car_4, R.drawable.image_car_5, R.drawable.image_car_6, R.drawable.image_car_7};
+    public RecyclerImageAdapter(List<Integer> imageList) {
+        this.imageList = imageList;
     }
 
     @Override
@@ -32,13 +33,13 @@ public class RecyclerImageAdapter extends RecyclerView.Adapter<RecyclerImageAdap
     @Override
     public void onBindViewHolder(ImageHolder holder, int position) {
         Glide.with(context)
-                .load(imageRes[position])
+                .load(imageList.get(position))
                 .into(holder.imageView);
     }
 
     @Override
     public int getItemCount() {
-        return imageRes.length;
+        return imageList.size();
     }
 
     public class ImageHolder extends RecyclerView.ViewHolder {

@@ -14,6 +14,9 @@ import android.view.View;
 
 import com.liez.tyas.materialme.adapter.RecyclerImageAdapter;
 
+import java.util.ArrayList;
+import java.util.List;
+
 import butterknife.Bind;
 import butterknife.ButterKnife;
 
@@ -42,7 +45,15 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         navigationView.inflateHeaderView(R.layout.navigation_head);
         navigationView.setNavigationItemSelectedListener(this);
         recyclerView.setLayoutManager(new StaggeredGridLayoutManager(2, StaggeredGridLayoutManager.VERTICAL));
-        recyclerView.setAdapter(new RecyclerImageAdapter());
+        List<Integer> imageIntegers = new ArrayList<>();
+        imageIntegers.add(R.drawable.image_car_1);
+        imageIntegers.add(R.drawable.image_car_2);
+        imageIntegers.add(R.drawable.image_car_3);
+        imageIntegers.add(R.drawable.image_car_4);
+        imageIntegers.add(R.drawable.image_car_5);
+        imageIntegers.add(R.drawable.image_car_6);
+        imageIntegers.add(R.drawable.image_car_7);
+        recyclerView.setAdapter(new RecyclerImageAdapter(imageIntegers));
     }
 
     @Override
