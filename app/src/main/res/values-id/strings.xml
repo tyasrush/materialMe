@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">MaterialMe</string>
+    <string name="title_activity_list_item">ListItemActivity</string>
+    <string name="title_activity_support_design">SupportDesignActivity</string>
+
+    <string name="dummy_lorem">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In id magna eget sem placerat lobortis. Nulla auctor massa id lacinia ornare. Suspendisse gravida pulvinar est at auctor. Quisque rutrum lacinia augue, consectetur iaculis urna convallis et. Etiam pretium in ante eleifend suscipit. Pellentesque semper lorem ut felis ornare, vitae finibus sapien commodo. Sed nec malesuada neque, a placerat mi. Pellentesque aliquet magna tortor, eget eleifend dui porta sed. Suspendisse aliquet consequat odio porttitor mattis. Ut pulvinar consequat tellus non imperdiet.
+
+Integer porta leo vel massa auctor eleifend. Curabitur hendrerit tincidunt est in rhoncus. Mauris malesuada felis id lectus volutpat eleifend. Mauris id velit vel ante dignissim ullamcorper sed eget eros. Ut eget augue odio. Praesent rutrum quam eget est gravida vestibulum. Nam efficitur quis metus non sollicitudin. Integer egestas pharetra tristique. Curabitur tellus tortor, convallis ac elementum non, ullamcorper id sem. Donec vel velit lobortis, lacinia nulla vitae, mattis felis. Vestibulum vitae blandit erat. Phasellus vel arcu at ante posuere pellentesque.</string>
+
+    <string name="pref">Preferensi</string>
+    <string name="setting">Pengaturan</string>
+</resources>

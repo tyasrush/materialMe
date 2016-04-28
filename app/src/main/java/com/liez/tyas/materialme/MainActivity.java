@@ -72,6 +72,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             startActivity(new Intent(this, SupportDesignActivity.class));
         }
 
+        if (item.getItemId() == R.id.setting_home) {
+            startActivity(new Intent(this, SettingsActivity.class));
+        }
+
         return false;
     }
 }

@@ -13,13 +13,15 @@
         android:title="Menu 3" />
 
 
-    <item android:title="Homy">
+    <item android:title="@string/pref">
         <menu>
             <item android:title="Homy 1" />
 
             <item android:title="Homy 2" />
 
-            <item android:title="Homy 3" />
+            <item
+                android:id="@+id/setting_home"
+                android:title="@string/setting" />
         </menu>
     </item>
 
