@@ -9,6 +9,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.StaggeredGridLayoutManager;
 import android.support.v7.widget.Toolbar;
+import android.util.Log;
 import android.view.MenuItem;
 import android.view.View;
 
@@ -57,6 +58,12 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     }
 
     @Override
+    protected void onStart() {
+        super.onStart();
+//        Log.d(getClass().getName(), "username : " + );
+    }
+
+    @Override
     public void onClick(View view) {
         if (drawerLayout.isDrawerOpen(GravityCompat.START)) {
             drawerLayout.closeDrawers();
@@ -65,11 +72,14 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         }
     }
 
-
     @Override
     public boolean onNavigationItemSelected(MenuItem item) {
         if (item.getItemId() == R.id.menu_item_1) {
             startActivity(new Intent(this, SupportDesignActivity.class));
+        }
+
+        if (item.getItemId() == R.id.menu_item_2) {
+            startActivity(new Intent(this, AdmobActivity.class));
         }
 
         if (item.getItemId() == R.id.setting_home) {
