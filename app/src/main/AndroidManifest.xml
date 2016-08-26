@@ -2,9 +2,10 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.liez.tyas.materialme">
 
-    <!-- Include required permissions for Google Mobile Ads to run. -->
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
 
     <application
         android:allowBackup="true"
@@ -13,7 +14,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
-            android:name=".MainActivity"
+            android:name=".ui.MainActivity"
             android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -22,15 +23,15 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".ListItemActivity"
+            android:name=".ui.ListItemActivity"
             android:label="@string/title_activity_list_item"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name=".SupportDesignActivity"
+            android:name=".ui.SupportDesignActivity"
             android:label="@string/title_activity_support_design"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name=".SettingsActivity"
+            android:name=".ui.SettingsActivity"
             android:label="@string/title_activity_settings"
             android:theme="@style/AppTheme" />
         <!-- This meta-data tag is required to use Google Play Services. -->
@@ -39,12 +40,16 @@
             android:value="@integer/google_play_services_version" />
 
         <activity
-            android:name=".AdmobActivity"
-            android:label="@string/title_activity_admob"></activity> <!-- Include the AdActivity configChanges and theme. -->
+            android:name=".ui.AdmobActivity"
+            android:label="@string/title_activity_admob" /> <!-- Include the AdActivity configChanges and theme. -->
         <activity
             android:name="com.google.android.gms.ads.AdActivity"
             android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
             android:theme="@android:style/Theme.Translucent" />
+        <activity
+            android:name=".ui.ImageActivity"
+            android:label="@string/title_activity_image"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 
 </manifest>

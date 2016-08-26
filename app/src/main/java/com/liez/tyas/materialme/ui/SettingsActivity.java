@@ -1,4 +1,4 @@
-package com.liez.tyas.materialme;
+package com.liez.tyas.materialme.ui;
 
 
 import android.content.SharedPreferences;
@@ -14,6 +14,8 @@ import android.text.SpannableString;
 import android.text.style.ForegroundColorSpan;
 import android.util.Log;
 import android.view.MenuItem;
+
+import com.liez.tyas.materialme.R;
 
 /**
  * A {@link PreferenceActivity} that presents a set of application settings. On

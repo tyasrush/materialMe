@@ -1,4 +1,4 @@
-package com.liez.tyas.materialme;
+package com.liez.tyas.materialme.ui;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -9,11 +9,11 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.StaggeredGridLayoutManager;
 import android.support.v7.widget.Toolbar;
-import android.util.Log;
 import android.view.MenuItem;
 import android.view.View;
 
-import com.liez.tyas.materialme.adapter.RecyclerImageAdapter;
+import com.liez.tyas.materialme.R;
+import com.liez.tyas.materialme.ui.adapter.RecyclerImageAdapter;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -80,6 +80,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         if (item.getItemId() == R.id.menu_item_2) {
             startActivity(new Intent(this, AdmobActivity.class));
+        }
+
+        if (item.getItemId() == R.id.menu_item_3) {
+            startActivity(new Intent(this, ImageActivity.class));
         }
 
         if (item.getItemId() == R.id.setting_home) {

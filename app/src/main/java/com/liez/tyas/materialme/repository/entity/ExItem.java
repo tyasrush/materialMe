@@ -1,4 +1,4 @@
-package com.liez.tyas.materialme.entity;
+package com.liez.tyas.materialme.repository.entity;
 
 import java.util.Date;
 

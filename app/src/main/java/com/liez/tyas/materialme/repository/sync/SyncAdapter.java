@@ -1,4 +1,4 @@
-package com.liez.tyas.materialme.sync;
+package com.liez.tyas.materialme.repository.sync;
 
 import android.accounts.Account;
 import android.content.AbstractThreadedSyncAdapter;

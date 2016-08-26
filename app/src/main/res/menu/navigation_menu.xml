@@ -10,7 +10,7 @@
 
     <item
         android:id="@+id/menu_item_3"
-        android:title="Menu 3" />
+        android:title="Upload Image" />
 
 
     <item android:title="@string/pref">

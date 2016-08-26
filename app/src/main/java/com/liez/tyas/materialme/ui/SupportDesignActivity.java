@@ -1,4 +1,4 @@
-package com.liez.tyas.materialme;
+package com.liez.tyas.materialme.ui;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
@@ -6,6 +6,7 @@ import android.support.v7.widget.Toolbar;
 import android.widget.ImageView;
 
 import com.bumptech.glide.Glide;
+import com.liez.tyas.materialme.R;
 
 import butterknife.Bind;
 import butterknife.ButterKnife;

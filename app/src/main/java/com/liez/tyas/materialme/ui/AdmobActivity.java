@@ -1,8 +1,9 @@
-package com.liez.tyas.materialme;
+package com.liez.tyas.materialme.ui;
 
 import com.google.android.gms.ads.AdListener;
 import com.google.android.gms.ads.AdRequest;
 import com.google.android.gms.ads.InterstitialAd;
+import com.liez.tyas.materialme.R;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;

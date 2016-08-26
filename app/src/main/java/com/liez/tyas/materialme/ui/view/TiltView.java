@@ -1,4 +1,4 @@
-package com.liez.tyas.materialme.view;
+package com.liez.tyas.materialme.ui.view;
 
 import android.annotation.TargetApi;
 import android.content.Context;

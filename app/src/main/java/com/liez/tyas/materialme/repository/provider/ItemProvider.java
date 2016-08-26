@@ -1,4 +1,4 @@
-package com.liez.tyas.materialme.provider;
+package com.liez.tyas.materialme.repository.provider;
 
 import android.content.ContentProvider;
 import android.content.ContentValues;
@@ -6,7 +6,7 @@ import android.database.Cursor;
 import android.net.Uri;
 import android.support.annotation.Nullable;
 
-import com.liez.tyas.materialme.entity.ExItem;
+import com.liez.tyas.materialme.repository.entity.ExItem;
 
 import java.util.ArrayList;
 import java.util.List;
